@@ -27,9 +27,9 @@ def reg_dice_number(dice_cont, cx_dice, cy_dice):
 
 # Define output
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-out = cv2.VideoWriter('D:/Learning/Computer Vision/Sources/output.mp4', fourcc, 20.0, (1300, 731))
+out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (1300, 731))
 
-cap = VideoCapture('D:/Learning/Computer Vision/Sources/dices.mov')
+cap = VideoCapture('dices.mov')
 played = True
 while cap.isOpened():
     if played is True:
